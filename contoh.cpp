@@ -1,27 +1,6 @@
 #include <iostream>
 using namespace std;
 
-class PersegiPanjang
-{
-
-public:
-    int panjang, lebar;
-
-public:
-    void input()
-    {
-        cout << "Masukkan panjang : ";
-        cin >> panjang;
-        cout << "Masukkan lebar : ";
-        cin >> lebar;
-    }
-    int luasPp(int a, int b)
-    {
-        return a * b;
-    }
-    Lingkaran el;
-};
-
 class Lingkaran
 {
 public:
@@ -39,14 +18,40 @@ public:
     }
 };
 
+class PersegiPanjang
+{
+
+public:
+    int panjang, lebar;
+
+public:
+    void input()
+    {
+        cout << "Masukkan panjang : ";
+        cin >> panjang;
+        cout << "Masukkan lebar : ";
+        cin >> lebar;
+    }
+
+    int luasPp(int a, int b)
+    {
+        return a * b;
+    }
+
+    Lingkaran ol;
+};
+
 int main()
 {
     PersegiPanjang objekPP;
-    Lingkaran el;
+    Lingkaran ol;
 
-    cout << "Masukkan panjang";
+    cout << "Masukkan panjang : ";
     cin >> objekPP.panjang;
     cout << "Masukkan lebar : ";
     cin >> objekPP.lebar;
     cout << "Luas Persegi Panjang : " << objekPP.luasPp(objekPP.panjang, objekPP.lebar) << endl;
+
+    ol.input();
+    cout << "Luas Lingkaran : " << ol.luasLingkaran(ol.jarijari) << endl;
 };
