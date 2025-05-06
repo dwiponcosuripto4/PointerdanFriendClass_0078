@@ -19,4 +19,9 @@ public:
     {
         return a * b;
     }
+    Lingkaran el;
+};
+
+class Lingkaran
+{
 };
